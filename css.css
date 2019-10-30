@@ -59,7 +59,8 @@ body {
 }
 
 .block {
-  margin: 0px 100px;
+  width: 90vw;
+  /*margin: 0px 100px;*/
   padding: 50px;
   border-radius: 2px;
   box-shadow: 10px 10px 10px rgba(230, 230, 230, 0.2);
@@ -67,6 +68,7 @@ body {
   box-sizing: border-box;
   transition: 0.4s;
   position: relative;
+  margin: 0 auto;
 }
 
 #pencilicon {
