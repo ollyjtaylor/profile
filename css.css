@@ -31,7 +31,7 @@ body {
 .btn-blue {
   text-decoration: none;
   border-radius: 3px;
-  background-color: rgb(53, 91, 127);
+  background-color: #355b7f;
   color: white;
   padding: 10px;
   font-weight: bold;
@@ -44,9 +44,7 @@ body {
 }
 
 .btn-blue:hover {
-  background-color: rgb(53, 91, 127, 0.7);
-  transform: scale(1.1);
-/*  padding: 12px;*/
+  background-color: #2e679e;
 }
 
 .btn-blue a {
@@ -63,7 +61,7 @@ body {
   /*margin: 0px 100px;*/
   padding: 50px;
   border-radius: 2px;
-  box-shadow: 10px 10px 10px rgba(230, 230, 230, 0.2);
+  box-shadow: 10px 10px 20px rgba(230, 230, 230, 0.2);
   background-color: white;
   box-sizing: border-box;
   transition: 0.4s;
@@ -102,7 +100,7 @@ body {
 }
 
 .block:hover {
-  box-shadow: 10px 10px 10px rgba(230, 230, 230, 0.5);
+  box-shadow: 10px 10px 20px rgba(230, 230, 230, 0.5);
 }
 
 .avatar {
@@ -150,6 +148,24 @@ body {
   z-index: -1;
   height: 300px;
   width: 400px;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }
 
 @media (max-width: 960px) {
