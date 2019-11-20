@@ -1,188 +1,72 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato|Space+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto&display=swap');
 
 body {
-  text-align: center;
-  margin: 0;
-  background-color: rgba(230, 230, 230, 0.1);
-  font-family: 'Raleway', sans-serif;
-  color: rgb(80, 80, 80)
+  background-size: cover;
+  font-family:
 }
 
-.title h1 {
+h1 {
   font-family: 'Roboto', sans-serif;
-  color: rgb(80, 80, 80);
-  font-size: 40px;
-  margin-bottom: -10px;
+  margin-top: 5px;
+  font-size: 25px;
+
 }
 
-.title h2 {
-  font-weight: lighter;
-}
-
-.title p {
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 10px;
+  border-bottom: rgb(150, 150, 150) 1px solid;
   line-height: 25px;
 }
 
-.title {
-  margin: 100px 200px;
-}
-
-.btn-blue {
-  text-decoration: none;
-  border-radius: 3px;
-  background-color: #355b7f;
-  color: white;
-  padding: 10px;
-  font-weight: bold;
-  transition: background-color 0.5s ease;
-  position: relative;
-    top: 15px;
-    margin-left:auto;
-    margin-right:auto;
-  transition: all .2s ease-in-out;
-}
-
-.btn-blue:hover {
-  background-color: #2e679e;
-}
-
-.btn-blue a {
-  margin-top: 60px;
-}
-
-.banner {
-  height: 600px;
-  width: 100%;
-}
-
-.block {
-  width: 90vw;
-  /*margin: 0px 100px;*/
-  padding: 50px;
-  border-radius: 2px;
-  box-shadow: 10px 10px 20px rgba(230, 230, 230, 0.2);
-  background-color: white;
-  box-sizing: border-box;
-  transition: 0.4s;
-  position: relative;
-  margin: 0 auto;
-}
-
-#pencilicon {
-  height: 30px;
-  width: 30px;
-}
-
-#settingicon {
-  height: 30px;
-  width: 30px;
-}
-
-#diamondicon {
-  height: 30px;
-  width: 30px;
-}
-
-.footerlist i {
-  color: white;
-  font-size: 40px;
-  transition: color 0.3s ease;
-}
-
-.footerlist i:hover {
-  color: rgb(220, 220, 220);
-}
-
-.block h2 {
-  color: #355B7F;
-  font-family: 'Roboto', sans-serif;
-}
-
-.block:hover {
-  box-shadow: 10px 10px 20px rgba(230, 230, 230, 0.5);
-}
-
-.avatar {
-  border-radius: 50%;
-  border-color: white;
-  border-style: solid;
-  border-width: 8px;
-  height: 200px;
-  width: 200px;
-  position: absolute;
-    top: -160px;
-    left:0;
-    right:0;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.footer {
-  height: 130px;
-  width: 100%;
-  background-color: rgba(50, 50, 50, 0.9);
-}
-
-.footer h2 {
-  color: white;
-  position: absolute;
-}
-
-.footerlist {
-  width: 100%;
-  color: white;
-  text-decoration: none;
-  list-style-type: none;
-  text-align: center;
+.container {
   display: flex;
   justify-content: center;
-  padding: 0
+  align-items: center;
+  height: 100vh;
+  width: 100%
 }
 
-.footerlist li {
-  margin: 30px;
+.card {
+  height: 70vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 18px;
+  color: rgb(50, 50, 50);
+  position: absolute;
 }
 
-.image {
-  z-index: -1;
-  height: 300px;
-  width: 400px;
+.avatar-bordered {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 4px solid;
+  position: relative;
+  top: -5vh;
 }
 
-/* Grow */
+.text {
+  margin-top: -30px;
+}
+
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.1);
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 450px;
-  }
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
