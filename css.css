@@ -21,6 +21,10 @@ p {
   line-height: 25px;
 }
 
+.skills {
+  font-weight: lighter;
+}
+
 .container {
   display: flex;
   justify-content: center;
